@@ -84,8 +84,6 @@ class VideoEmotionPipeline:
                 
         return frame, frame_emotions
     
-    video_path = 'C:\Users\HP\Desktop\code\major-project\video\WhatsApp Video 2026-02-01 at 10.11.24 PM.mp4'
-
     def process_video(self, video_path, output_path=None, progress_callback=None, realtime_callback=None):
         """Process entire video frame by frame"""
         cap = cv2.VideoCapture(video_path)
